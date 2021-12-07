@@ -28,6 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo ${{secrets.MYSECRET}}
+        run: echo ${{secrets.MYSECRET}} | sed 's/./& /g
         
 
       # Runs a set of commands using the runners shell
