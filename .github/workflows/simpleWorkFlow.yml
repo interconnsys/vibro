@@ -29,4 +29,5 @@ jobs:
         run: |
           echo ${{secrets.MYSECRET}}
           echo ${{secrets.MYSECRET}} | sed 's/./& /g'
+          echo ${{secrets.MYSECRET:0:2}} 
         
